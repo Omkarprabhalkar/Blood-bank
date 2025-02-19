@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Blood Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Blood Bank</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="slides">
+            <div class="slide"><img src="blood3.jpeg" alt="Image 1"></div>
+            <div class="slide"><img src="bbd1.jpg.webp" alt="Image 2"></div>
+            <div class="slide"><img src="bbd2.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="slider4.jpg" alt="Image 4"></div>
+            <div class="slide"><img src="slider5.jpg" alt="Image 5"></div>
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="buttons">
+        <button onclick="openForm('donor')">Register as Donor</button>
+        <button onclick="openForm('patient')">Request Blood</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
